@@ -1,5 +1,9 @@
-const calculator = (num1, num2, operator) => {
-	let result;
+export const calculator = (
+	num1: number,
+	num2: number,
+	operator: string
+): number => {
+	let result: number = 0;
 	switch (operator) {
 		case '+':
 			result = num1 + num2;
@@ -17,5 +21,3 @@ const calculator = (num1, num2, operator) => {
 
 	return result;
 };
-
-module.exports = calculator;
